@@ -93,15 +93,23 @@ const ContactForm = () => {
           </div>
 
           {/* Contact Form: replace with BowNow */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-2xl p-8 shadow-lg"
-          >
-            <div id="bownow-form-d8659d004037b743effb" />
-          </motion.div>
+         <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="bg-white rounded-2xl p-8 shadow-lg"
+>
+  <iframe
+    src="https://contents.bownow.jp/forms/sid_d8659d004037b743effb/index.html"
+    title="BowNow Contact Form"
+    width="100%"
+    height="600"
+    frameBorder="0"
+    style={{ border: 'none' }}
+    allowFullScreen
+  />
+</motion.div>
         </div>
       </div>
     </section>
