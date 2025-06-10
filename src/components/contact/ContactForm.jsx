@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const ContactForm = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.id = '_bownow_cs_sid_d8659d004037b743effb';
+    script.charset = 'utf-8';
+    script.src = 'https://contents.bownow.jp/forms/sid_d8659d004037b743effb/trace.js';
+    document.head.appendChild(script);
+  }, []);
+
   return (
-    <section id ="contact" className="py-16 bg-gray-50">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
@@ -15,36 +24,28 @@ const ContactForm = () => {
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Thông tin liên hệ</h2>
-              
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-4">Hotline</h3>
                   <div className="space-y-2">
                     <p>+84 24 3212 1810</p>
-                    <p>++84 24 3212 1811</p>
+                    <p>+84 24 3212 1811</p>
                   </div>
                 </div>
-
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-4">Email</h3>
-                  <div className="space-y-2">
-                    <p>hsv-sales@hino-systech.com</p>
-                  </div>
+                  <p>hsv-sales@hino-systech.com</p>
                 </div>
-
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-4">Địa chỉ</h3>
                   <p>Ô số 1 và ô số 2, tầng 13, 148 Tower</p>
-                  <p>số 148 đường Hoàng Quốc Việt, Phường Nghĩa Tân, </p>
-                 <p> Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
+                  <p>số 148 đường Hoàng Quốc Việt, Phường Nghĩa Tân,</p>
+                  <p>Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
                 </div>
-
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-4">Giờ làm việc</h3>
-                  <div className="space-y-2">
-                    <p>T2 - T6: 8:00 - 17:30</p>
-                    <p>T7: 8:00 - 12:00</p>
-                  </div>
+                  <p>T2 - T6: 8:00 - 17:30</p>
+                  <p>T7: 8:00 - 12:00</p>
                 </div>
               </div>
 
@@ -91,7 +92,7 @@ const ContactForm = () => {
             </motion.div>
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form: replace with BowNow */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -99,105 +100,7 @@ const ContactForm = () => {
             viewport={{ once: true }}
             className="bg-white rounded-2xl p-8 shadow-lg"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Liên hệ tư vấn</h2>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Họ và tên *
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Nhập họ và tên"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Nhập email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Số điện thoại *
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="Nhập số điện thoại"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Công ty
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Nhập tên công ty"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Loại dự án
-                  </label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
-                    <option value="">Chọn loại dự án</option>
-                    <option value="solar">Điện mặt trời</option>
-                    <option value="scada">Hệ thống SCADA</option>
-                    <option value="automation">Tự động hóa</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Công suất dự kiến
-                  </label>
-<select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
-                    <option value="">Chọn công suất</option>
-                    <option value="small">&lt; 1MWp</option>
-                    <option value="medium">1-5 MWp</option>
-                    <option value="large">&gt; 5MWp</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Địa điểm dự án
-                </label>
-                <input
-                  type="text"
-                  placeholder="Nhập địa điểm dự án"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Mô tả yêu cầu
-                </label>
-                <textarea
-                  rows="4"
-                  placeholder="Mô tả chi tiết về yêu cầu và mục tiêu của dự án..."
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                ></textarea>
-              </div>
-
-              <button type="submit" className="w-full btn-primary">
-                Gửi yêu cầu tư vấn
-              </button>
-            </form>
+            <div id="bownow-form-d8659d004037b743effb" />
           </motion.div>
         </div>
       </div>
