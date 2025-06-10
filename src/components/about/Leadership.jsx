@@ -7,13 +7,13 @@ const Leadership = () => {
       position: 'Hino Systech Corporation\nChủ tịch kiêm Giám đốc điều hành',
       message: 'Kể từ khi thành lập năm 1950, HINO SYSTECH CORPORATION đã đạt nhiều thành tựu trong tự động hóa quy trình (PA) và nhà máy (FA), đóng góp cho ngành công nghiệp Nhật Bản và quốc tế.',
       
-      image: 'public/img/Mr.Hino.png'
+      image: '/img/Mr.Hino.png'
     },
     {
       name: 'Ông Mai Văn Tuyền',
       position: 'Giám đốc điều hành\nHino Systech Việt Nam',
       message: 'Hino Systech Việt Nam, thành lập năm 2015 tại Hà Nội, là chi nhánh Đông Nam Á của tập đoàn Hino Systech Nhật Bản. Chúng tôi cung cấp các giải pháp tự động hóa và phần mềm công nghiệp cho nhiều lĩnh vực.',
-      image: 'public/img/a.Tuyen.jpg'
+      image: '/img/a.Tuyen.jpg'
     }
   ];
 
