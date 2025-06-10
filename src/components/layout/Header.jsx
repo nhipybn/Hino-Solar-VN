@@ -18,7 +18,7 @@ const menuItems = [
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
 <a href="#home" className="flex items-center">
-            <img src="img/logo1.png" alt="Logo" className="h-16 w-auto" />
+            <img src="/img/logo1.png" alt="Logo" className="h-16 w-auto" />
   <span className="text-xl font-bold text-primary">Hino Systech</span>
           </a>
 

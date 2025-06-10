@@ -7,7 +7,7 @@ const Leadership = () => {
       position: 'Hino Systech Corporation\nChủ tịch kiêm Giám đốc điều hành',
       message: 'Kể từ khi thành lập năm 1950, HINO SYSTECH CORPORATION đã đạt nhiều thành tựu trong tự động hóa quy trình (PA) và nhà máy (FA), đóng góp cho ngành công nghiệp Nhật Bản và quốc tế.',
       
-      image: 'img/Hino .png'
+      image: 'img/Mr.Hino.png'
     },
     {
       name: 'Ông Mai Văn Tuyền',
