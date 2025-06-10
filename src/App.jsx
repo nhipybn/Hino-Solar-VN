@@ -10,7 +10,7 @@ import ServiceCTA from './components/services/ServiceCTA';
 import FeaturedProjects from './components/projects/FeaturedProjects';
 import ContactForm from './components/contact/ContactForm';
 import Footer from './components/layout/Footer';
-import TrackingScript from '/components/contact/TrackingScript.jsx'; // đường dẫn đúng đến file vừa tạo
+import TrackingScript from '/components/contact/TrackingScript'; // đường dẫn đúng đến file vừa tạo
 
 function App() {
   return (
