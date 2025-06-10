@@ -19,17 +19,17 @@ const solutions = [
   {
     title: 'Vận hành song song với máy phát',
     description: 'Kết hợp liền mạch hệ thống máy phát diesel nối lưới với bộ điều khiển năng lượng mặt trời.',
-    image: 'img/máyphat.jpg'
+    image: 'public/img/máyphat.jpg'
   },
   {
     title: 'Điều khiển tập trung điện mặt trời',
     description: 'Theo dõi hiệu suất hệ thống 24/7 với độ chính xác 99.9% và cảnh báo tức thì',
-    image: '/img/history_of_solar_cells.jpg'
+    image: 'public/img/history_of_solar_cells.jpg'
   },
   {
     title: 'Đảm bảo hệ số công suất nhà máy',
     description: 'Theo dõi công suất điện nằm ở mức cho phép của EVN.',
-    image: '/img/solarpanel.jpg'
+    image: 'public/img/solarpanel.jpg'
   },
   {
     title: 'Tối ưu hóa hiệu suất của hệ thống điện mặt trời',
