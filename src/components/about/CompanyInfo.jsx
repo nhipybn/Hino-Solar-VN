@@ -37,7 +37,7 @@ const CompanyInfo = () => {
         className="relative h-full"
       >
         <img
-          src="public/img/aboutus.jpg"
+          src="/public/img/aboutus.jpg"
           alt="Corporate Building"
           className="w-full h-full object-cover rounded-2xl shadow-lg"
         />
