@@ -10,6 +10,7 @@ import ServiceCTA from './components/services/ServiceCTA';
 import FeaturedProjects from './components/projects/FeaturedProjects';
 import ContactForm from './components/contact/ContactForm';
 import Footer from './components/layout/Footer';
+import TrackingScript from './TrackingScript'; // đường dẫn đúng đến file vừa tạo
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <FeaturedProjects />
         <ServiceCTA />
         <ContactForm />
+        <TrackingScript />
       </main>
       <Footer />
     </div>
