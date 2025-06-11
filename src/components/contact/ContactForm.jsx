@@ -1,14 +1,7 @@
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "./TrackingScript";
 
 const ContactForm = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.id = '_bownow_cs_sid_d8659d004037b743effb';
-    script.charset = 'utf-8';
-    script.src = 'https://contents.bownow.jp/forms/sid_d8659d004037b743effb/trace.js';
-    document.head.appendChild(script);
-  }, []);
 
   return (
     <section id="contact" className="py-16 bg-gray-50">
@@ -93,23 +86,16 @@ const ContactForm = () => {
           </div>
 
           {/* Contact Form: replace with BowNow */}
-         <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, delay: 0.2 }}
-  viewport={{ once: true }}
-  className="bg-white rounded-2xl p-8 shadow-lg"
->
-  <iframe
-      src="https://contents.bownow.jp/forms/sid_0a39549f1d7f04ebc83a/index.html"
-    title="BowNow Contact Form"
-    width="100%"
-    height="600"
-    frameBorder="0"
-    style={{ border: 'none' }}
-    allowFullScreen
-  />
-</motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="p-8"
+          >
+            <h2 className="text-xl font-bold mb-4">Liên hệ</h2>
+            <BowNowForm />
+          </motion.div>
         </div>
       </div>
     </section>
