@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { motion } from "./TrackingScript";
+import { motion } from 'framer-motion';
+import BowNowForm from './TrackingScript'; // ✅ thêm dòng này để dùng BowNowForm
 
 const ContactForm = () => {
-
   return (
     <section id="contact" className="py-16 bg-gray-50">
       <div className="container-custom">
